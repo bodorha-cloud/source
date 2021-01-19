@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.all{
+	width: 100%;
+	height: 100vh;
+	background-image:url("background2/background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100vh;
+	position: relative;
+}
+@keyframes item {
+  0%   {transform: rotate(2deg); opacity: 1;}
+  25%  {transform: rotate(-2deg); opacity: 1;}
+  50%  {transform: rotate(2deg);opacity: 1;}
+  75%  {transform: rotate(-2deg);opacity: 1;}
+  100% {transform: rotate(2deg);opacity: 1;}
+}
+@keyframes first { 0%  {opacity: 0;}}
+@keyframes second { 40%  {opacity: 0;}}
+@keyframes third {80%  {opacity: 0;}}
+@keyframes bee {
+  0%   { left:140px; top:20px;}
+  10%  { left:140px; top:0px;}
+  20%  { left:160px; top:40px;}
+  30%  { left:140px; top:20px;}
+  40% {left:120px; top:0px;}
+  50%   { left:160px; top:40px;}
+  60%  { left:120px; top:0px;}
+  70%  { left:140px; top:20px;}
+  80%  { left:120px; top:40px;}
+  90% {left:160px; top:0px;}
+} 
+@keyframes first1 { 50%  {opacity: 0;}}
+@keyframes second1 { 50%  {opacity: 0;}} 
+@keyframes wing {
+  0%   {left:2px; top:202px;}
+  25%  { left:0px; top:200px; transform: rotate(10deg);}
+  50%  { left:2px; top:202px;}
+  75%  { left:0px; top:200px;}
+  100% {left:2px; top:202px;}
+}
+@keyframes outsun{
+50% {transform: rotate(180deg);}
+}
+@keyframes list {
+  0%   {width: 0px; height: 0px;}
+  25%  { width: 25%; height: 25%;}
+  50%  { width: 50%; height: 50%;}
+  75%  { width: 75%; height: 75%;}
+  100% {width: 100%; height: 100%;}
+}
+@keyframes sun {
+  0%   {top: 100px; left: 0px;}
+  25%  {top: 50px; left: 200px;}
+  50%  {top: 10px; left: 500px;}
+  75%  {top: 30px; left: 800px;}
+  100% {top:50px; left: 1500px;}
+}
+
+
+/*
+@keyframes second {
+  0%   {display:none;transition: 1s;}
+  50%  {display:block;transition: 1s;}
+  100% {display:none;transition: 1s;}
+}
+@keyframes third {
+  0%   {display:none;transition: 1s;}
+  50%  {display:none;transition: 1s;}
+  100% {display:block;transition: 1s;}
+}
+/*.a{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100vh;
+	animation: move;
+	animation-duration: 15s;
+   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}*/
+.b1{
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+}
+.first{
+	animation: first 2s  infinite;
+}
+.second {
+	animation: second 2s  infinite;
+}
+.third{
+	animation: third 2s  infinite;
+}
+.first1{
+	animation: first1 2s  infinite;
+	
+}
+.second1 {
+	animation: second1 2s  infinite;
+	animation-delay:1s;
+}
+.bee{
+	width: 350px;
+	height: 250px;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	
+}
+.bee1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.bee2{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	animation: bee 2s  infinite;
+	animation-duration: 4s;
+}
+.bee3{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left:140px; top:20px;
+	animation: bee 2s  infinite;
+	animation-duration: 4s;
+	animation-delay: 2s;
+}
+.bee4{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left:140px; top:20px;
+	animation: bee 2s  infinite;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+.cow{
+	width: 450px;
+	height: 350px;
+	position: relative;
+	top: 40%;
+	left: 15%;
+}
+.cow2{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+.cow3{
+	width: 60px;
+	height: 50px;
+	position: absolute;
+	top: 22%;
+	left: 54%;
+}
+.tree{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	top: -220px;
+	left:1100px;
+}
+.hen{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -500px;
+	left: 1000px;
+	
+}
+.henalone ,.wing{
+	position: absolute;
+}
+.wing{
+	animation: wing 2s  infinite;
+	animation-duration: 2s;
+}
+.sheep{
+	width: 170px;
+	height: 170px;
+	position: relative;
+	top: -500px;
+	left: 700px;
+	
+}
+.babysheep ,.eyesheep{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 0px;
+	left: 100px;
+}
+.closed{
+	width: 20px;
+	height: 20px;
+	top: 60px;
+	left: 182px;
+}
+.smalltree{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -560px;
+	left: 840px;
+	
+}
+.list{
+	width: 350px;
+	height: 250px;
+	position: relative;
+	top: -1000px;
+	left: 0px;
+	z-index: 5
+}
+.list1{
+	width: 350px;
+	height: 550px;
+	top: -100px;
+	left: -50px;
+	position: absolute;
+	animation: list 1s 1;
+	animation-duration: 1s;
+}
+.all1{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 5;
+	left: 75px;
+	animation: item 1s infinite ;
+	animation-duration: 2s;
+	animation-delay: 2s;
+	opacity: 0;
+}
+.meat{
+	top: 50px;
+}
+.bread{
+	top: 125px;
+}
+.honey{
+	top: 200px;
+}
+.oil{
+	top: 260px;
+	left: 135px;
+}
+.milk{
+	top: 250px;
+	left: 10px;
+}
+.sun{
+	position: absolute;
+	width: 50px;
+	height: 50px;	
+	animation: sun 1s infinite;
+	animation-duration:20s;
+	
+}
+.sun img{
+	position: absolute;
+
+}
+.outsun{
+	width:78px;
+	height: 78px;
+	top: -14px;
+	left: -14px;
+	animation: outsun 1s infinite;
+	animation-duration:20s;
+}
